@@ -1,0 +1,38 @@
+// header
+.header {
+    .logo {
+        background-image: url(../images/logo.png);
+        background-repeat: no-repeat;
+        @include hide-text;
+    }
+    
+    a {
+        &:hover {
+            color: $success;
+        }
+    }
+
+    // 767px 以下
+    @include mobile {
+        .logo {
+            margin: 10px 136px;
+        }
+
+        ul {
+            margin-bottom: 0;
+        }
+
+        li {
+            border: 1px solid #FFFFFF;
+            width: 50%;
+        }
+    }
+}
+
+
+
+   
+
+    
+
+
