@@ -3,8 +3,10 @@
 @import "base";
 @import "mixins";
 @import "utilities";
+@import "components/tabs";
 
 
-@import "header";
-@import "index";
-@import "footer";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/index";
+@import "content/optical";

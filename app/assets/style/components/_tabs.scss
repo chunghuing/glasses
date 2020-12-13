@@ -1,0 +1,56 @@
+.tabs {
+    max-width: 1386px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 42px;
+    .tab {
+        flex: 0 0 percentage(1 / 3);
+        border: 1px solid #DCDCDC;
+    }
+
+    .active {
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-bottom: 16px solid $danger;
+        }
+    }
+
+    @include pad {
+        font-size: 28px;
+        .icon {
+            width: 32px;
+        }
+
+        .functional-icon {
+            width: 23px;
+        }
+
+        .active {
+            &::after {
+              border-width: 8px;
+            }
+          }
+    }
+
+    @include mobile {
+        font-size: 14px;
+
+        .icon {
+            width: 14px;
+        }
+
+        .functional-icon {
+            width: 10px;
+        }
+
+        .active {
+            &::after {
+              border-width: 4px;
+            }
+          }
+    }
+}
