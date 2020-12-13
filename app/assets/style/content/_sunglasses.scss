@@ -17,7 +17,6 @@
             margin-right: 0;
         }
         .img {
-            object-fit: contain;
             width: 50%;
         }
     }
@@ -33,21 +32,23 @@
         line-height: 48px;
     }
 
-    .optical-card {
+    .sunglasses-card {
+        margin-bottom: 112px;
+
         &-img {
             width: 100%;
-            height: 164px;
+            height: 224px;
             object-fit: cover;
             object-position: center;
         }
+
         &-body {
-            // 定義所有字母均為大寫
             text-transform: uppercase;
         }
 
         .colors {
-            width: 24px;
-            height: 24px;
+            width: 19px;
+            height: 19px;
             border-radius: 4px;
         }
     }
@@ -103,6 +104,22 @@
             font-size: 24px;
         }
 
+        .sunglasses-card {
+            margin-bottom: 72px;
+
+            &-body {
+                font-size: 24px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .colors {
+                width: 24px;
+                height: 24px;
+                border-radius: 4px;
+            }
+        }
+
         .pagination {
             margin-bottom: 104px;
             .page-change {
@@ -110,6 +127,8 @@
                 padding-right: 15px;
             }
         }
+
+        
     }
 
     @include mobile {
@@ -123,11 +142,17 @@
             font-size: 16px;
         }
 
-        .optical-card {
+        .sunglasses-card {
+            margin-bottom: 32px;
+
             &-body {
-                p {
-                    font-size: 16px;
-                }
+                font-size: 16px;
+            }
+
+            .colors {
+                width: 15px;
+                height: 16px;
+                border-radius: 4px;
             }
         }
 
@@ -147,12 +172,12 @@
             }
 
             li {
-              a {
-                font-size: 12px;
-                line-height: 18px;
-              }
+                a {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
             }
-          }
+        }
     }
 }
 
