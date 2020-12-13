@@ -13189,8 +13189,6 @@ ul, li {
       .series-banner .img:first-child {
         margin-right: 0; }
       .series-banner .img {
-        -o-object-fit: contain;
-           object-fit: contain;
         width: 50%; } }
 
 .series h2 {
@@ -13199,21 +13197,21 @@ ul, li {
 .series h3 {
   line-height: 48px; }
 
-.series .optical-card-img {
-  width: 100%;
-  height: 164px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center; }
-
-.series .optical-card-body {
-  text-transform: uppercase; }
-
-.series .optical-card .colors {
-  width: 24px;
-  height: 24px;
-  border-radius: 4px; }
+.series .sunglasses-card {
+  margin-bottom: 112px; }
+  .series .sunglasses-card-img {
+    width: 100%;
+    height: 224px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center; }
+  .series .sunglasses-card-body {
+    text-transform: uppercase; }
+  .series .sunglasses-card .colors {
+    width: 19px;
+    height: 19px;
+    border-radius: 4px; }
 
 .series .pagination {
   margin-bottom: 156px; }
@@ -13248,6 +13246,20 @@ ul, li {
     font-size: 32px; }
   .series h3 {
     font-size: 24px; }
+  .series .sunglasses-card {
+    margin-bottom: 72px; }
+    .series .sunglasses-card-body {
+      font-size: 24px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .series .sunglasses-card .colors {
+      width: 24px;
+      height: 24px;
+      border-radius: 4px; }
   .series .pagination {
     margin-bottom: 104px; }
     .series .pagination .page-change {
@@ -13261,8 +13273,14 @@ ul, li {
   .series h3 {
     line-height: 16px;
     font-size: 16px; }
-  .series .optical-card-body p {
-    font-size: 16px; }
+  .series .sunglasses-card {
+    margin-bottom: 32px; }
+    .series .sunglasses-card-body {
+      font-size: 16px; }
+    .series .sunglasses-card .colors {
+      width: 15px;
+      height: 16px;
+      border-radius: 4px; }
   .series .pagination {
     margin-bottom: 56px; }
     .series .pagination .page-change {
