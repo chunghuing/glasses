@@ -8,15 +8,16 @@
         border: 1px solid #DCDCDC;
     }
 
-    .active {
-        &::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
+    a {
+        border-bottom: 16px solid transparent;
+
+        &:hover  {
             border-bottom: 16px solid $danger;
         }
+    }
+
+    a.active {
+        border-bottom: 16px solid $danger;
     }
 
     @include pad {
@@ -29,11 +30,17 @@
             width: 23px;
         }
 
-        .active {
-            &::after {
-              border-width: 8px;
+        a {
+            border-bottom: 8px solid transparent;
+    
+            &:hover  {
+                border-bottom: 8px solid $danger;
             }
-          }
+        }
+    
+        a.active {
+            border-bottom: 8px solid $danger;
+        }
     }
 
     @include mobile {
@@ -47,10 +54,16 @@
             width: 10px;
         }
 
-        .active {
-            &::after {
-              border-width: 4px;
+        a {
+            border-bottom: 4px solid transparent;
+    
+            &:hover  {
+                border-bottom: 4px solid $danger;
             }
-          }
+        }
+    
+        a.active {
+            border-bottom: 4px solid $danger;
+        }
     }
 }
