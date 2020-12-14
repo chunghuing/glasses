@@ -12822,14 +12822,43 @@ ul, li {
 .header a:hover {
   color: white; }
 
+@media (max-width: 992px) {
+  .header .hover-bt-line {
+    position: relative; }
+    .header .hover-bt-line::after {
+      content: "";
+      position: absolute;
+      background-color: white;
+      left: 0;
+      right: 0;
+      height: 0px;
+      bottom: -7px;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+    .header .hover-bt-line:hover::after {
+      left: 0;
+      right: 0; }
+  .header li {
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s; }
+    .header li:hover, .header li:focus {
+      color: white;
+      opacity: .75; } }
+
 @media (max-width: 767px) {
   .header .logo {
     margin: 10px 136px; }
   .header ul {
+    width: 100%;
     margin-bottom: 0; }
   .header li {
     border: 1px solid #FFFFFF;
     width: 50%; } }
+
+.footer .footer-intro-menu {
+  margin-right: calc((100% - 432px - 208px)); }
 
 .footer .link {
   -webkit-transition: all .5s;
@@ -12839,11 +12868,12 @@ ul, li {
     color: white;
     opacity: .75; }
 
-.footer .footer-contact {
-  border-bottom: 1px solid white;
-  padding-bottom: 22px; }
-  .footer .footer-contact .tel {
-    margin-right: 17px; }
+.footer .footer-contact .tel {
+  margin-right: 17px; }
+
+.footer .copyright {
+  border-top: 1px solid white;
+  padding-top: 22px; }
 
 .footer .copyright-logo {
   margin-right: 38px; }
@@ -12868,13 +12898,6 @@ ul, li {
     font-size: 14px; } }
 
 @media (max-width: 767px) {
-  .footer .footer-intro-menu {
-    display: none; }
-  .footer .social {
-    float: right; }
-    .footer .social::after {
-      content: '';
-      clear: both; }
   .footer .copyright-logo {
     display: block;
     width: 46px;
@@ -12890,17 +12913,17 @@ ul, li {
   background-size: cover;
   background-repeat: no-repeat; }
   @media (max-width: 992px) {
-    .index-banner h1 {
+    .index-banner h2 {
       font-size: 48px; }
-      .index-banner h1 span {
+      .index-banner h2 span {
         font-size: 20px; } }
   @media (max-width: 767px) {
     .index-banner {
       background-image: url("./../images/index/banner-sm.png");
       height: 394px; }
-      .index-banner h1 {
+      .index-banner h2 {
         font-size: 32px; }
-        .index-banner h1 span {
+        .index-banner h2 span {
           font-size: 16px; } }
 
 .about .align-items-baseline {
@@ -12916,7 +12939,7 @@ ul, li {
     font-size: 32px; }
   .about .col-md-6 {
     padding: 0 calc((50% - 237px) / 2); }
-  .about h4 {
+  .about h3 {
     font-size: 20px; } }
 
 @media (max-width: 767px) {
@@ -12951,7 +12974,7 @@ ul, li {
 @media (max-width: 767px) {
   .product h2 {
     font-size: 20px; }
-  .product .optical, .product .sunglasses, .product .functional {
+  .product .product-series {
     font-size: 1.75rem;
     position: absolute;
     height: 100%;
@@ -12959,9 +12982,9 @@ ul, li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    .product .optical p, .product .sunglasses p, .product .functional p {
+    .product .product-series p {
       color: #ffff; }
-    .product .optical .product-icon, .product .sunglasses .product-icon, .product .functional .product-icon {
+    .product .product-series .product-icon {
       display: none; } }
 
 .design {
@@ -13055,10 +13078,6 @@ ul, li {
   max-width: 730px;
   width: 100%;
   margin: 0 auto; }
-
-.contact .form-group {
-  display: block;
-  width: 100%; }
 
 .contact .label {
   display: block;
