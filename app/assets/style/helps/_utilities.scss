@@ -135,15 +135,3 @@ $line-height-base: 1.5 !default;
     line-height: $font-size-base * 2.5;//40
   }
 }
-
-// responsive breakpoint
-@mixin pad {
-  @media (max-width: 992px) {
-    @content;
-  }
-}
-@mixin mobile {
-  @media (max-width: 767px) {
-    @content;
-  }
-}

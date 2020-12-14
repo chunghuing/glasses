@@ -1,4 +1,8 @@
 .footer {
+    .footer-intro-menu {
+        // margin-right: 438px;
+        margin-right: calc((100% - 432px - 208px));
+    }
 
     .link {
         transition: all .5s;
@@ -9,14 +13,15 @@
     }
 
     .footer-contact {
-        border-bottom: 1px solid $success;
-        padding-bottom: 22px;
         .tel {
             margin-right: 17px;
         }
     }
 
-
+    .copyright {
+        border-top: 1px solid $success;
+        padding-top: 22px;
+    }
     .copyright-logo {
         margin-right: 38px;
     }
@@ -58,19 +63,6 @@
     }
     // 767px 以下
     @include mobile {
-        
-        .footer-intro-menu {
-            display: none;
-        }
-
-        .social {
-            float: right;
-            &::after {
-            content: '';
-            clear: both;
-            }
-        }
-
         .copyright-logo {
             display: block;
             width: 46px;

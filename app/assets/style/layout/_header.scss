@@ -12,6 +12,36 @@
         }
     }
 
+    @include pad {
+        .hover {
+            &-bt-line {
+                position: relative;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  background-color: white;
+                  left: 0;
+                  right: 0;
+                  height: 0px;
+                  bottom: -7px;
+                  transition: 0.3s;
+                }
+                &:hover::after {
+                  left: 0;
+                  right: 0;
+                }
+            }
+        }
+
+        li {
+            transition: all .5s;
+            &:hover,&:focus {
+                color: $success;
+                opacity: .75;
+            }
+        }
+      }
+
     // 767px 以下
     @include mobile {
         .logo {
@@ -19,6 +49,7 @@
         }
 
         ul {
+            width: 100%;
             margin-bottom: 0;
         }
 
