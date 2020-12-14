@@ -1,0 +1,10 @@
+.banner {
+    height: 304px;
+    background-image: url('./../images/qa.png');
+    background-size: cover;
+    background-position: center;
+
+    @include mobile {
+        height: 143px;
+    }
+}
