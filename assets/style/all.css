@@ -189,7 +189,7 @@ th {
 
 label {
   display: inline-block;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0; }
 
 button {
   border-radius: 0; }
@@ -3971,13 +3971,13 @@ input[type="button"].btn-block {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   min-height: 1px;
-  padding: 1.25rem; }
+  padding: 0; }
 
 .card-title {
-  margin-bottom: 0.75rem; }
+  margin-bottom: 0; }
 
 .card-subtitle {
-  margin-top: -0.375rem;
+  margin-top: 0;
   margin-bottom: 0; }
 
 .card-text:last-child {
@@ -3987,10 +3987,10 @@ input[type="button"].btn-block {
   text-decoration: none; }
 
 .card-link + .card-link {
-  margin-left: 1.25rem; }
+  margin-left: 0; }
 
 .card-header {
-  padding: 0.75rem 1.25rem;
+  padding: 0 0;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
@@ -3998,21 +3998,21 @@ input[type="button"].btn-block {
     border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0; }
 
 .card-footer {
-  padding: 0.75rem 1.25rem;
+  padding: 0 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125); }
   .card-footer:last-child {
     border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px); }
 
 .card-header-tabs {
-  margin-right: -0.625rem;
-  margin-bottom: -0.75rem;
-  margin-left: -0.625rem;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
   border-bottom: 0; }
 
 .card-header-pills {
-  margin-right: -0.625rem;
-  margin-left: -0.625rem; }
+  margin-right: 0;
+  margin-left: 0; }
 
 .card-img-overlay {
   position: absolute;
@@ -4102,7 +4102,7 @@ input[type="button"].btn-block {
           border-bottom-left-radius: 0; } }
 
 .card-columns .card {
-  margin-bottom: 0.75rem; }
+  margin-bottom: 0; }
 
 @media (min-width: 576px) {
   .card-columns {
@@ -12775,6 +12775,43 @@ ul, li {
       .tabs a.active {
         border-bottom: 4px solid #AA0601; } }
 
+.banner {
+  height: 304px;
+  background-image: url("./../images/qa.png");
+  background-size: cover;
+  background-position: center; }
+  @media (max-width: 767px) {
+    .banner {
+      height: 143px; } }
+
+.card-header {
+  max-height: 224px;
+  overflow: hidden; }
+
+.card-body {
+  border: 1px solid #00000020; }
+
+.card-title {
+  border-bottom: 1px solid #00000020; }
+
+.card-list {
+  padding: 16px 24px 16px 28px; }
+
+.card .btn {
+  padding: 20px 135px;
+  font-size: 19px;
+  line-height: 26px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer; }
+  .card .btn:hover, .card .btn:focus {
+    opacity: .75; }
+
+@media (max-width: 992px) {
+  .card-header {
+    max-height: 164px; } }
+
 .header .logo {
   background-image: url(../images/logo.png);
   background-repeat: no-repeat;
@@ -12846,24 +12883,24 @@ ul, li {
     right: 0;
     margin-right: 0; } }
 
-.banner {
+.index-banner {
   height: 840px;
   background-image: url("./../images/index/banner.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
   @media (max-width: 992px) {
-    .banner h1 {
+    .index-banner h1 {
       font-size: 48px; }
-      .banner h1 span {
+      .index-banner h1 span {
         font-size: 20px; } }
   @media (max-width: 767px) {
-    .banner {
+    .index-banner {
       background-image: url("./../images/index/banner-sm.png");
       height: 394px; }
-      .banner h1 {
+      .index-banner h1 {
         font-size: 32px; }
-        .banner h1 span {
+        .index-banner h1 span {
           font-size: 16px; } }
 
 .about .align-items-baseline {
@@ -13301,5 +13338,54 @@ ul, li {
 
 .darkslategray {
   background: #5F3E2D; }
+
+.banner .icon {
+  height: 1em;
+  vertical-align: middle; }
+
+@media (max-width: 992px) {
+  .banner h2 {
+    font-size: 48px; }
+  .banner .icon {
+    width: 30px; } }
+
+@media (max-width: 767px) {
+  .banner h2 {
+    font-size: 28px; }
+  .banner .icon {
+    width: 17px; } }
+
+.location .select {
+  width: 324px;
+  padding: 10px 19px;
+  color: #495057; }
+
+.location .icon {
+  width: 21px;
+  height: 21px; }
+
+@media (max-width: 992px) {
+  .location h2 {
+    font-size: 16px; }
+  .location .card-list {
+    font-size: 14px;
+    padding: 16px 18px 16px 18px; }
+  .location .btn {
+    font-size: 14px;
+    padding: 16px 135px; } }
+
+@media (max-width: 767px) {
+  .location .area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .location .label, .location .select {
+    font-size: 14px; }
+  .location .select {
+    width: 277px;
+    padding: 8px 16px; } }
 
 /*# sourceMappingURL=all.css.map */
